@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-image: url(../img/background.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 60vmax;
+}
+/*# sourceMappingURL=main.css.map */
