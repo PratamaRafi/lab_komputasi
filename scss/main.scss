@@ -7,15 +7,139 @@ $secColor: #2C2A55;
 $thrdColor: #9296D3;
 $textColor: #6578C4;
 
+//Mixin
+@mixin button {
+    display: inline-block;
+    color: white;
+    background-color: $primaryColor;
+    border-radius: 2em;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
 
 //style
 body {
     font-family: 'Ubuntu', sans-serif;
-    background-image: url(../img/background.png);
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 60vmax;
-    
+    &::before {
+        content: '';
+        background-image: url(../img/background.png);
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: 60vmax;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        @media screen and (max-width: 992px) {
+            opacity: 0.6;
+            
+        }
+    }
 }
 
 //NAVBAR
+.custom-nav {
+    .navbar-brand {
+        img {
+            width: 45px;
+            height: 45px;
+            margin-top: -7px;
+        }
+        span {
+            color: $secColor;
+            font-weight: 700;
+            font-size: 1.4rem;
+            margin-left: 0.4em;
+        }
+    }
+
+    #navbarNav {
+        .navbar-nav {
+            .nav-item {
+                .nav-link{
+                    color: $secColor;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    margin-left: 2.4em;
+                    transition: .3s color ease;
+
+                    &:hover {
+                        color: lighten(white, 50%);
+                    }
+                }
+                .contact-button {
+                    background-color: white;
+                    border-radius: 2em;
+                    border: 0;
+                    padding-left: 1.5em;
+                    padding-right: 1.5em;
+
+                    &:hover {
+                        color: darken($textColor, 10%);
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 992px) {
+        margin-top: -1em;
+    }
+}
+
+//custom section
+.custom-section {
+    margin-top: 10em;
+    h2 {
+        font-weight: 700;
+        font-size: 4rem;
+        color: $secColor;
+        white-space: nowrap;
+        line-height: 1;
+    }
+
+    h3 {
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: $textColor;
+        white-space: nowrap;
+        line-height: 1;
+    }
+    p {
+        font-size: 1rem;
+        color: #212529;
+        margin-top: 2em;
+    }
+
+    a{
+        margin-top: 2.2em;
+       @include button; 
+       border: 1px solid transparent;
+       transition: 0.5s ease;
+       font-weight: 500;
+
+       &:hover {
+           color: $primaryColor;
+           border: 1px solid $primaryColor;
+           background-color: transparent;
+       }
+    }
+
+    @media screen and (max-width: 992px) {
+        margin-top: 3em;
+        text-align: center;
+        h2, h3, p {
+            text-shadow: 1px 1px 1px rgba(#212529, 0.3);
+        }
+        h3 {
+          color: lighten(#212529, 10%);
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        h2{
+            font-size: 3rem;
+        }
+    }
+}
