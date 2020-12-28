@@ -216,6 +216,7 @@ body::before {
   border-radius: 2em;
   background-color: #EE8926;
   border: none;
+  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 992px) {
@@ -225,8 +226,14 @@ body::before {
   .lab-info p, .lab-info h3, .lab-info a {
     margin-left: 25px;
   }
+  .lab-info h3 {
+    font-size: 2.7em;
+  }
   .lab-info img {
-    margin-left: -25px;
+    margin-left: -30px;
+    margin-right: 10px;
+    -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -234,5 +241,14 @@ body::before {
   .lab-info .button-asisten {
     margin-left: 145px;
   }
+}
+
+.footer {
+  margin-top: 100px;
+}
+
+.footer p {
+  color: #2C2A55;
+  font-size: 1.1em;
 }
 /*# sourceMappingURL=main.css.map */

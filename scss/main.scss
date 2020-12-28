@@ -229,6 +229,7 @@ body {
         border-radius: 2em;
         background-color: $primaryColor;
         border: none;
+        margin-bottom: 50px;
     }
 
     @media screen and (max-width: 992px) {
@@ -237,8 +238,14 @@ body {
             margin-left: 25px;
         }
 
+        h3 {
+            font-size: 2.7em;
+        }
+
         img {
-            margin-left: -25px;
+            margin-left: -30px;
+            margin-right: 10px;
+            box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
         }
     }
 
@@ -251,3 +258,11 @@ body {
 
 }
 
+// footer
+.footer {
+    margin-top: 100px;
+    p {
+        color: $secColor;
+        font-size: 1.1em;
+    }
+}
