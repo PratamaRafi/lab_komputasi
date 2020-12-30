@@ -17,7 +17,6 @@ $textColor: #6578C4;
     text-decoration: none;
 }
 
-
 //style
 body {
     font-family: 'Ubuntu', sans-serif;
@@ -140,6 +139,8 @@ body {
        transition: 0.5s ease;
        font-weight: 500;
        margin-left: 100px;
+       
+        
 
        &:hover {
            color: $primaryColor;
@@ -173,9 +174,10 @@ body {
 .lesson-panel {
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
     border-radius: 12px;
-    margin-top: 100px;
+    margin-top: 150px;
     background-color: whitesmoke;
     padding: 30px;
+    transition: all .5s ease-in-out;
 
     img {
         width: 80px;
@@ -202,7 +204,7 @@ body {
 
 // lab-info
 .lab-info {
-    margin-top: 120px;
+    margin-top: 140px;
 
     img {
         border-radius: 1em;
@@ -230,6 +232,15 @@ body {
         background-color: $primaryColor;
         border: none;
         margin-bottom: 50px;
+        border: 1px solid transparent;
+        transition: 0.5s ease;
+        font-weight: 500;
+
+        &:hover {
+            color: $primaryColor;
+            border: 1px solid $primaryColor;
+            background-color: transparent;
+        }
     }
 
     @media screen and (max-width: 992px) {
