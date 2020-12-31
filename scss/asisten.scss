@@ -22,6 +22,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
     &::before {
         content: '';
+        opacity: .6;
         margin-bottom: -500px;
         box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
         background-image: url(../img/background.png);
@@ -33,10 +34,6 @@ body {
         left: 0;
         bottom: 0;
         right: 0;
-        @media screen and (max-width: 992px) {
-            opacity: 0.6;
-            
-        }
     }
 }
 
@@ -174,86 +171,125 @@ body {
 }
 
 // Lesson Panel
-.lesson-panel {
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
-    border-radius: 12px;
-    margin-top: 150px;
-    background-color: whitesmoke;
-    padding: 30px;
-    transition: all .5s ease-in-out;
+// .lesson-panel {
+//     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+//     border-radius: 12px;
+//     margin-top: 150px;
+//     background-color: whitesmoke;
+//     padding: 30px;
+//     transition: all .5s ease-in-out;
 
-    img {
-        width: 80px;
-        height: 80px;
-        margin-right: 20px;
-        margin-bottom: 20px;
-    }
+//     img {
+//         width: 80px;
+//         height: 80px;
+//         margin-right: 20px;
+//         margin-bottom: 20px;
+//     }
 
-    h4 {
-        font-size: 1em;
-        text-transform: uppercase;
-        font-weight: bold;
-        margin-top: 5px;
-    }
+//     h4 {
+//         font-size: 1em;
+//         text-transform: uppercase;
+//         font-weight: bold;
+//         margin-top: 5px;
+//     }
 
-    p {
-        font-size: 0.9em;
-        color: $secColor;
-        margin-top: -5px;
-        font-weight: 300;
-    }
+//     p {
+//         font-size: 0.9em;
+//         color: $secColor;
+//         margin-top: -5px;
+//         font-weight: 300;
+//     }
 
+// }
+// salam asisten
+.text {
+    margin-bottom: -80px;
 }
 
 // lab-info
 .lab-info {
+    .text {
+        @media screen and (max-width: 992px){
+            h3 {
+                font-size: 4em;
+            }
+        }
+    }
     margin-top: 140px;
+    min-height: calc(100vh - 70px);
 
     img {
         border-radius: 1em;
+        height: 357px;
+        width: 268px;
+        margin-left: 150px;
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+
     }
 
-    h3 {
-        font-size: 3.2em;
-        font-weight: 300;
-        text-transform: uppercase;
-        margin-top: 30px;
-        span {
-            font-weight: 500;
+    .biodata {
+        background-color: whitesmoke;
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+        border-radius: 2.7em;
+        height: 357px;
+
+        @media screen and (max-width: 992px) {
+            margin: 40px 20px 0 20px;
+            height: 370px;
+        }
+        h3 {
+            font-size: 2.7em;
+            font-weight: 300;
+            text-transform: uppercase;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            @media screen and (max-width:992px) {
+                font-size: 2.2em;
+                text-transform: none;
+                margin-bottom: 70px;
+            }
+            span {
+                font-weight: 500;
+            }
+        }
+    
+        p {
+            font-size: 1.1em;
+            color: $secColor;
+            font-weight: 300;
+            margin: 10px 0;
         }
     }
+    
 
-    p {
-        font-size: 1.1em;
-        color: $secColor;
-        font-weight: 300;
-        margin: 30px 0;
-    }
+    // .button-asisten {
+    //     border-radius: 2em;
+    //     background-color: $primaryColor;
+    //     border: none;
+    //     margin-bottom: 50px;
+    //     border: 1px solid transparent;
+    //     transition: 0.5s ease;
+    //     font-weight: 500;
 
-    .button-asisten {
-        border-radius: 2em;
-        background-color: $primaryColor;
-        border: none;
-        margin-bottom: 50px;
-        border: 1px solid transparent;
-        transition: 0.5s ease;
-        font-weight: 500;
-
-        &:hover {
-            color: $primaryColor;
-            border: 1px solid $primaryColor;
-            background-color: transparent;
-        }
-    }
+    //     &:hover {
+    //         color: $primaryColor;
+    //         border: 1px solid $primaryColor;
+    //         background-color: transparent;
+    //     }
+    // }
 
     @media screen and (max-width: 992px) {
         text-align: center;
         p, h3, a {
-            margin-left: 25px;
+            margin-left: 2px;
         }
 
         h3 {
             font-size: 2.7em;
+        }
+
+        p {
+            font-size: 1em;
         }
 
         img {

@@ -6,6 +6,7 @@ body {
 
 body::before {
   content: '';
+  opacity: .6;
   margin-bottom: -500px;
   -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
@@ -18,12 +19,6 @@ body::before {
   left: 0;
   bottom: 0;
   right: 0;
-}
-
-@media screen and (max-width: 992px) {
-  body::before {
-    opacity: 0.6;
-  }
 }
 
 .custom-nav .navbar-brand img {
@@ -160,79 +155,70 @@ body::before {
   }
 }
 
-.lesson-panel {
-  -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
-  border-radius: 12px;
-  margin-top: 150px;
-  background-color: whitesmoke;
-  padding: 30px;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-
-.lesson-panel img {
-  width: 80px;
-  height: 80px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.lesson-panel h4 {
-  font-size: 1em;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 5px;
-}
-
-.lesson-panel p {
-  font-size: 0.9em;
-  color: #2C2A55;
-  margin-top: -5px;
-  font-weight: 300;
+.text {
+  margin-bottom: -80px;
 }
 
 .lab-info {
   margin-top: 140px;
+  min-height: calc(100vh - 70px);
+}
+
+@media screen and (max-width: 992px) {
+  .lab-info .text h3 {
+    font-size: 4em;
+  }
 }
 
 .lab-info img {
   border-radius: 1em;
+  height: 357px;
+  width: 268px;
+  margin-left: 150px;
+  -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
 }
 
-.lab-info h3 {
-  font-size: 3.2em;
+.lab-info .biodata {
+  background-color: whitesmoke;
+  -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 2.7em;
+  height: 357px;
+}
+
+@media screen and (max-width: 992px) {
+  .lab-info .biodata {
+    margin: 40px 20px 0 20px;
+    height: 370px;
+  }
+}
+
+.lab-info .biodata h3 {
+  font-size: 2.7em;
   font-weight: 300;
   text-transform: uppercase;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.lab-info h3 span {
+@media screen and (max-width: 992px) {
+  .lab-info .biodata h3 {
+    font-size: 2.2em;
+    text-transform: none;
+    margin-bottom: 70px;
+  }
+}
+
+.lab-info .biodata h3 span {
   font-weight: 500;
 }
 
-.lab-info p {
+.lab-info .biodata p {
   font-size: 1.1em;
   color: #2C2A55;
   font-weight: 300;
-  margin: 30px 0;
-}
-
-.lab-info .button-asisten {
-  border-radius: 2em;
-  background-color: #EE8926;
-  border: none;
-  margin-bottom: 50px;
-  border: 1px solid transparent;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  font-weight: 500;
-}
-
-.lab-info .button-asisten:hover {
-  color: #EE8926;
-  border: 1px solid #EE8926;
-  background-color: transparent;
+  margin: 10px 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -240,10 +226,13 @@ body::before {
     text-align: center;
   }
   .lab-info p, .lab-info h3, .lab-info a {
-    margin-left: 25px;
+    margin-left: 2px;
   }
   .lab-info h3 {
     font-size: 2.7em;
+  }
+  .lab-info p {
+    font-size: 1em;
   }
   .lab-info img {
     margin-left: -30px;
@@ -267,4 +256,4 @@ body::before {
   color: #2C2A55;
   font-size: 1.1em;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=asisten.css.map */
