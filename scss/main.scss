@@ -59,6 +59,43 @@ body {
     #navbarNav {
         .navbar-nav {
             .nav-item {
+                .dropdown-menu {
+                    display: block;
+                    visibility: hidden;
+                    opacity:0;
+                    transform: translateY(50px);
+                    transition:.5s ease all;
+                    background-color: white;
+                    border-radius: 1em;
+                    padding-right: -30px;
+                    padding-left: -30px;
+                    &:hover {
+                        color: lighten(white, 50%);
+                    }
+
+                    @media screen and (max-width: 992px) {
+                        &:hover {
+                            color: darken($textColor, 10%);
+                    }
+                        
+                    } 
+                    .dropdown-item{
+                    color: $secColor;    
+                    font-weight: 500;
+                    padding-right: -30px;
+                    padding-left: -30px;
+                    @media screen and (max-width: 992px) {
+                        text-align: center;
+                    }
+                    }
+                }
+                .dropdown-menu.show {
+                    display: block;
+                    visibility: visible;
+                    opacity:1;
+                    transform: translateY(0px);
+                    transition:.5s ease all;
+                }
                 .nav-link{
                     text-align: center;
                     color: $secColor;
@@ -66,12 +103,14 @@ body {
                     text-transform: uppercase;
                     margin-left: 2.4em;
                     transition: .3s color ease;
+                    
 
                     &:hover {
                         color: lighten(white, 50%);
                     }
 
                     @media screen and (max-width: 992px) {
+                        margin-right: 1.6em;
                         &:hover {
                             color: darken($textColor, 10%);
                     }
@@ -87,6 +126,7 @@ body {
                     border: 0;
                     padding-left: 1.5em;
                     padding-right: 1.5em;
+                    margin-left: 5em;
 
                     &:hover {
                         color: darken(white, 10%);
@@ -94,8 +134,9 @@ body {
                     }
 
                     @media screen and (max-width: 992px){
-                        background-color: $secColor;
-                        color: white;
+                        // background-color: $secColor;
+                        // color: white;
+                        margin-left: 1.4em;
 
                         &:hover {
                             color: darken($textColor, 10%);
@@ -208,6 +249,9 @@ body {
 // lab-info
 .lab-info {
     margin-top: 140px;
+    h3, p{
+        margin-left: 3px !important;
+    }
 
     img {
         border-radius: 1em;
@@ -230,14 +274,72 @@ body {
         margin: 30px 0;
     }
 
-    .button-asisten {
+    .tombol-asisten{
+        .dropdown-menu {
+            text-align: center;
+            width: 237px;
+            a {
+                color: black;
+            }
+            display: block;
+            visibility: hidden;
+            opacity:0;
+            transform: translateY(100px);
+            transition:.5s ease all;
+            background-color: $primaryColor;
+            color: black;
+            border-radius: 1em;
+            padding-right: -30px;
+            padding-left: -30px;
+            // &:hover {
+            //     color: $primaryColor;
+            //     border: 1px solid $primaryColor;
+            //     background-color: transparent;
+            // }
+            @media screen and (max-width: 992px) {
+            //     &:hover {
+            //         color: darken($textColor, 50%);
+            // }
+            .dropdown-item{  
+                color: black;
+                a {
+                    &:hover{
+                        color: darken(black, 50%);
+                        border-radius: 2em;
+                    }
+                }
+                font-weight: 500;
+                padding-right: -30px;
+                padding-left: -30px;
+                @media screen and (max-width: 992px) {
+                    text-align: center;
+                    background-color: transparent;
+                }
+            }
+                
+        } 
+    }
+    .dropdown-menu.show {
+        display: block;
+        visibility: visible;
+        opacity:1;
+        transform: translateY(0px);
+        transition:.5s ease all;
+        }
+    }     .button-asisten {
+        background-color: $secColor;
+        color: whitesmoke;
+
+        @media screen and (min-width: 990px) {
+            margin-left: 150px;
+        }
         border-radius: 2em;
         background-color: $primaryColor;
         border: none;
         margin-bottom: 50px;
         border: 1px solid transparent;
         transition: 0.5s ease;
-        font-weight: 500;
+        font-weight: 400;
 
         &:hover {
             color: $primaryColor;
@@ -246,14 +348,15 @@ body {
         }
     }
 
+
     @media screen and (max-width: 992px) {
         text-align: center;
-        p, h3, a {
+        p, h3 {
             margin-left: 25px;
         }
 
         h3 {
-            font-size: 2.7em;
+            font-size: 2.5em;
         }
 
         img {
@@ -263,10 +366,45 @@ body {
         }
     }
 
-    @media screen and (min-width: 992px) {
-        .button-asisten {
-            margin-left: 145px;
-        }
+    @media screen and (max-width: 992px) {
+        // .button-asisten {
+
+        //     .dropdown-menu {
+        //         display: block;
+        //             visibility: hidden;
+        //             opacity:0;
+        //             transform: translateY(50px);
+        //             transition:.5s ease all;
+        //             background-color: white;
+        //             border-radius: 1em;
+        //             padding-right: -30px;
+        //             padding-left: -30px;
+        //             &:hover {
+        //                 color: lighten(white, 50%);
+        //             }
+        //             @media screen and (max-width: 992px) {
+        //                 &:hover {
+        //                     color: darken($textColor, 10%);
+        //             }.dropdown-item{
+        //                 color: $secColor;    
+        //                 font-weight: 500;
+        //                 padding-right: -30px;
+        //                 padding-left: -3x0px;
+        //                 @media screen and (max-width: 992px) {
+        //                     text-align: center;
+        //                 }
+        //             }
+                        
+        //         } 
+        //     }
+        //     .dropdown-menu.show {
+        //         display: block;
+        //         visibility: visible;
+        //         opacity:1;
+        //         transform: translateY(0px);
+        //         transition:.5s ease all;
+        //     }
+        // }
     }
  
 

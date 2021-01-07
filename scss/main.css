@@ -39,6 +39,53 @@ body::before {
   margin-left: 0.4em;
 }
 
+.custom-nav #navbarNav .navbar-nav .nav-item .dropdown-menu {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  -webkit-transition: .5s ease all;
+  transition: .5s ease all;
+  background-color: white;
+  border-radius: 1em;
+  padding-right: -30px;
+  padding-left: -30px;
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .dropdown-menu:hover {
+  color: white;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-nav #navbarNav .navbar-nav .nav-item .dropdown-menu:hover {
+    color: #445ab2;
+  }
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+  color: #2C2A55;
+  font-weight: 500;
+  padding-right: -30px;
+  padding-left: -30px;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-nav #navbarNav .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    text-align: center;
+  }
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .dropdown-menu.show {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: .5s ease all;
+  transition: .5s ease all;
+}
+
 .custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
   text-align: center;
   color: #2C2A55;
@@ -54,6 +101,9 @@ body::before {
 }
 
 @media screen and (max-width: 992px) {
+  .custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
+    margin-right: 1.6em;
+  }
   .custom-nav #navbarNav .navbar-nav .nav-item .nav-link:hover {
     color: #445ab2;
   }
@@ -67,6 +117,7 @@ body::before {
   border: 0;
   padding-left: 1.5em;
   padding-right: 1.5em;
+  margin-left: 5em;
 }
 
 .custom-nav #navbarNav .navbar-nav .nav-item .contact-button:hover {
@@ -76,8 +127,7 @@ body::before {
 
 @media screen and (max-width: 992px) {
   .custom-nav #navbarNav .navbar-nav .nav-item .contact-button {
-    background-color: #2C2A55;
-    color: white;
+    margin-left: 1.4em;
   }
   .custom-nav #navbarNav .navbar-nav .nav-item .contact-button:hover {
     color: #445ab2;
@@ -196,6 +246,10 @@ body::before {
   margin-top: 140px;
 }
 
+.lab-info h3, .lab-info p {
+  margin-left: 3px !important;
+}
+
 .lab-info img {
   border-radius: 1em;
 }
@@ -218,7 +272,60 @@ body::before {
   margin: 30px 0;
 }
 
+.lab-info .tombol-asisten .dropdown-menu {
+  text-align: center;
+  width: 237px;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-transition: .5s ease all;
+  transition: .5s ease all;
+  background-color: #EE8926;
+  color: black;
+  border-radius: 1em;
+  padding-right: -30px;
+  padding-left: -30px;
+}
+
+.lab-info .tombol-asisten .dropdown-menu a {
+  color: black;
+}
+
+@media screen and (max-width: 992px) {
+  .lab-info .tombol-asisten .dropdown-menu .dropdown-item {
+    color: black;
+    font-weight: 500;
+    padding-right: -30px;
+    padding-left: -30px;
+  }
+  .lab-info .tombol-asisten .dropdown-menu .dropdown-item a:hover {
+    color: black;
+    border-radius: 2em;
+  }
+}
+
+@media screen and (max-width: 992px) and (max-width: 992px) {
+  .lab-info .tombol-asisten .dropdown-menu .dropdown-item {
+    text-align: center;
+    background-color: transparent;
+  }
+}
+
+.lab-info .tombol-asisten .dropdown-menu.show {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: .5s ease all;
+  transition: .5s ease all;
+}
+
 .lab-info .button-asisten {
+  background-color: #2C2A55;
+  color: whitesmoke;
   border-radius: 2em;
   background-color: #EE8926;
   border: none;
@@ -226,7 +333,13 @@ body::before {
   border: 1px solid transparent;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  font-weight: 500;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 990px) {
+  .lab-info .button-asisten {
+    margin-left: 150px;
+  }
 }
 
 .lab-info .button-asisten:hover {
@@ -239,23 +352,17 @@ body::before {
   .lab-info {
     text-align: center;
   }
-  .lab-info p, .lab-info h3, .lab-info a {
+  .lab-info p, .lab-info h3 {
     margin-left: 25px;
   }
   .lab-info h3 {
-    font-size: 2.7em;
+    font-size: 2.5em;
   }
   .lab-info img {
     margin-left: -30px;
     margin-right: 10px;
     -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
             box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .lab-info .button-asisten {
-    margin-left: 145px;
   }
 }
 

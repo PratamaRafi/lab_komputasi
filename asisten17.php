@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <!-- My CSS -->
-    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="scss/asisten.css">
     <title>Lab Komputasi MIPA</title>
 
     <!--web icon-->
@@ -19,7 +19,7 @@
     <!-- NAVBAR -->
     <div class="container my-5">
     <nav class="navbar navbar-expand-lg navbar-light bg-light custom-nav bg-transparent">
-        <a class="navbar-brand" href="#home">
+        <a class="navbar-brand" href="index.php">
           <img src="img/lab.png" alt="logo lab">
           <span>Lab Komputasi</span>
         </a>
@@ -29,16 +29,21 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link slide-scroll" href="#home">Home</a>
+              <a class="nav-link slide-scroll" href="index.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link slide-scroll" href="#about">About Us</a>
+              <a class="nav-link slide-scroll" href="index.php #about">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                News
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="oprec.php">Open Recruitment</a>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link slide-scroll" href="#news">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn-primary contact-button" href="#">Contact Us</a>
+              <a class="nav-link btn-primary contact-button" href="#">Contact</a>
             </li>
           </ul>
         </div>
@@ -47,7 +52,7 @@
     <!-- End NAVBAR -->
 
   <!-- Upper Content -->
-    <div class="container">
+    <!-- <div class="container">
       <div class="row custom-section">
         <div class="col-12 col-lg-4">
           <h2>Hello World!</h2>
@@ -57,7 +62,7 @@
           <a class="slide-scroll" href="#explore">Explore More</a>
         </div>
       </div>
-    </div><br>
+    </div><br> -->
     <!-- End Upper Content -->
 
 
@@ -65,53 +70,35 @@
     <section class="section">
     <div class="contaier" id="explore">
 
-      <!-- Lesson Panel -->
-      <div class="row justify-content-center">
-        <div class="col-10 lesson-panel" id="explore">
-          <div class="row">
-            <h3>Get experience with : </h3>
-          </div><br>
-          <div class="row">
-            <div class="col-lg">
-              <img src="img/cpp.png" alt="Logo C++" class="float-left">
-              <h4>C++</h4>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="col-lg">
-              <img src="img/matlab.png" alt="Logo Matlab" class="float-left">
-              <h4>Matlab</h4>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="col-lg">
-              <img src="img/python.png" alt="Logo Python" class="float-left">
-              <h4>Python</h4>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Lesson Panel -->
-
       <!-- Lab info -->
-
-      <div class="row lab-info">
+        <div class="row text">
+            <div class="col text-center">
+                <h3>Oops..This Page Under Construction</h3>
+            </div>
+            
+        </div>
+      <!-- <div class="row lab-info">
         <div class="col-lg-5 offset-1" id="about">
-          <img src="img/prak.jpg" alt="ruang lab" class="img-fluid">
+          <img src="img/rizka.jpeg" alt="ruang lab" class="img-fluid">
         </div>
-        <div class="col-lg-5">
-          <h3>Work as a <span>team</span>, study as a <span> friend</span></h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore repellendus ipsa soluta recusandae dolorum eum mollitia explicabo sunt porro atque.</p>
-          <a href="asisten.html" class="btn btn-primary button-asisten">Berkenalan dengan asisten</a>
+        <div class="col-lg-5 biodata">
+          <h3><span>Semangat</span> Srikandi, untuk <span> berdedikasi</span></h3>
+          <p>Nama : Rizka Andri Yani</p>
+          <p>NIM  : 08021281823039</p>
+          <p>KBI  : Elinkomnuk</p>
         </div>
-      </div>
+      </div> -->
       <!-- End lab info -->
 
       <!-- Footer -->
-      <div class="row footer">
-        <div class="col text-center">
-          <p><span>Copyright &copy; Lab Komputasi 2020</span></p>
-        </div>
-      </div>
+      <footer class="sticky-footer">
+        <div class="row footer">
+            <div class="col text-center">
+              <p><span>Copyright &copy; Lab Komputasi 2020</span></p>
+            </div>
+          </div>
+      </footer>
+      
 
       <!-- End footer -->
 

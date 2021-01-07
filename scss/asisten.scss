@@ -56,6 +56,43 @@ body {
     #navbarNav {
         .navbar-nav {
             .nav-item {
+                .dropdown-menu {
+                    display: block;
+                    visibility: hidden;
+                    opacity:0;
+                    transform: translateY(50px);
+                    transition:.5s ease all;
+                    background-color: white;
+                    border-radius: 1em;
+                    padding-right: -30px;
+                    padding-left: -30px;
+                    &:hover {
+                        color: lighten(white, 50%);
+                    }
+
+                    @media screen and (max-width: 992px) {
+                        &:hover {
+                            color: darken($textColor, 10%);
+                    }
+                        
+                    } 
+                    .dropdown-item{
+                    color: $secColor;    
+                    font-weight: 500;
+                    padding-right: -30px;
+                    padding-left: -30px;
+                    @media screen and (max-width: 992px) {
+                        text-align: center;
+                    }
+                    }
+                }
+                .dropdown-menu.show {
+                    display: block;
+                    visibility: visible;
+                    opacity:1;
+                    transform: translateY(0px);
+                    transition:.5s ease all;
+                }
                 .nav-link{
                     text-align: center;
                     color: $secColor;
@@ -108,100 +145,8 @@ body {
     }
 }
 
-//custom section
-.custom-section {
-    margin-top: 10em;
-    h2 {
-        font-weight: 700;
-        font-size: 4rem;
-        color: $secColor;
-        white-space: nowrap;
-        line-height: 1;
-    }
 
-    h3 {
-        font-weight: 400;
-        font-size: 1.5rem;
-        color: $textColor;
-        white-space: nowrap;
-        line-height: 1;
-    }
-    p {
-        font-size: 1rem;
-        color: #212529;
-        margin-top: 2em;
-    }
 
-    a{
-        margin-top: 2.2em;
-       @include button; 
-       border: 1px solid transparent;
-       transition: 0.5s ease;
-       font-weight: 500;
-       margin-left: 100px;
-       
-        
-
-       &:hover {
-           color: $primaryColor;
-           border: 1px solid $primaryColor;
-           background-color: transparent;
-       }
-    }
-
-    @media screen and (max-width: 992px) {
-        margin-top: 3em;
-        text-align: center;
-        h2, h3, p {
-            text-shadow: 1px 1px 1px rgba(#212529, 0.3);
-        }
-        h3 {
-          color: lighten(#212529, 10%);
-        }
-        a {
-            margin-left: -5px;
-        }
-    }
-
-    @media screen and (max-width: 400px) {
-        h2{
-            font-size: 3rem;
-        }
-    }
-}
-
-// Lesson Panel
-// .lesson-panel {
-//     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
-//     border-radius: 12px;
-//     margin-top: 150px;
-//     background-color: whitesmoke;
-//     padding: 30px;
-//     transition: all .5s ease-in-out;
-
-//     img {
-//         width: 80px;
-//         height: 80px;
-//         margin-right: 20px;
-//         margin-bottom: 20px;
-//     }
-
-//     h4 {
-//         font-size: 1em;
-//         text-transform: uppercase;
-//         font-weight: bold;
-//         margin-top: 5px;
-//     }
-
-//     p {
-//         font-size: 0.9em;
-//         color: $secColor;
-//         margin-top: -5px;
-//         font-weight: 300;
-//     }
-
-// }
-// salam asisten
 .text {
     margin-bottom: -80px;
 }
@@ -211,7 +156,7 @@ body {
     .text {
         @media screen and (max-width: 992px){
             h3 {
-                font-size: 4em;
+                font-size: 3.5em;
             }
         }
     }
@@ -224,6 +169,10 @@ body {
         width: 268px;
         margin-left: 150px;
         box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+        margin-bottom: 100px;
+        @media screen and (max-width:992px){
+            margin-top: 45px;
+        }
 
     }
 
@@ -232,17 +181,19 @@ body {
         box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
         border-radius: 2.7em;
         height: 357px;
+        margin-bottom: 100px;
 
         @media screen and (max-width: 992px) {
-            margin: 40px 20px 0 20px;
+            margin: -30px 20px 0 20px;
             height: 370px;
         }
         h3 {
-            font-size: 2.7em;
+            text-align: center;
+            font-size: 2.2em;
             font-weight: 300;
             text-transform: uppercase;
             margin-top: 30px;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
             @media screen and (max-width:992px) {
                 font-size: 2.2em;
                 text-transform: none;
