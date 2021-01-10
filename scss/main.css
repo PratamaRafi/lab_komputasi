@@ -278,10 +278,10 @@ body::before {
   display: block;
   visibility: hidden;
   opacity: 0;
-  -webkit-transform: translateY(100px);
-          transform: translateY(100px);
-  -webkit-transition: .5s ease all;
-  transition: .5s ease all;
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
+  -webkit-transition: .4s ease all;
+  transition: .4s ease all;
   background-color: #EE8926;
   color: black;
   border-radius: 1em;
@@ -317,10 +317,10 @@ body::before {
   display: block;
   visibility: visible;
   opacity: 1;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-  -webkit-transition: .5s ease all;
-  transition: .5s ease all;
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
+  -webkit-transition: .4s ease all;
+  transition: .4s ease all;
 }
 
 .lab-info .button-asisten {

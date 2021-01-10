@@ -284,8 +284,8 @@ body {
             display: block;
             visibility: hidden;
             opacity:0;
-            transform: translateY(100px);
-            transition:.5s ease all;
+            transform: translateY(150px);
+            transition:.4s ease all;
             background-color: $primaryColor;
             color: black;
             border-radius: 1em;
@@ -323,8 +323,8 @@ body {
         display: block;
         visibility: visible;
         opacity:1;
-        transform: translateY(0px);
-        transition:.5s ease all;
+        transform: translateY(150px);
+        transition:.4s ease all;
         }
     }     .button-asisten {
         background-color: $secColor;

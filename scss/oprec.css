@@ -145,6 +145,15 @@ body::before {
   border-radius: 1.7em;
 }
 
+.text p {
+  font-size: 1.1em;
+}
+
+.text p span {
+  font-weight: 500;
+  font-size: 1.3em;
+}
+
 .footer {
   margin-top: 100px;
 }

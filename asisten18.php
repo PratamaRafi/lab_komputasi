@@ -39,7 +39,7 @@
               <a class="nav-link slide-scroll" href="index.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link slide-scroll" href="index.php #about">About Us</a>
+              <a class="nav-link slide-scroll" href="index.php">About Us</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

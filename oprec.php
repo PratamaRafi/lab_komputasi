@@ -1,7 +1,13 @@
 <?php
-$asisten = array( array("No"=>1,"Nama"=>"Muhammad Rafi Pratama", "NIM"=>"08021281823027" , "Angkatan"=>"Fisika 2018"),
-               array("No"=>2,"Nama"=>"daisy", "NIM"=>0.75 , "Angkatan"=>"08021281823027"),
-               array("No"=>3  ,"Nama"=>"orchid", "NIM"=>1.15 , "Angkatan"=>7) 
+$asisten = array( array("No"=>1,"Nama"=>"Anas Fatur Rahman", "NIM"=>"08021181823085 " , "Angkatan"=>"Fisika 2018"),
+               array("No"=>2,"Nama"=>"Ade Rizki Wahyudi", "NIM"=>"08021381924056" , "Angkatan"=>"Fisika 2019"),
+               array("No"=>3  ,"Nama"=>"Tiara Martika Gerhany", "NIM"=>"08021381823074" , "Angkatan"=>"Fisika 2018"),
+               array("No"=>4,"Nama"=>"M. Fahrezy Putra", "NIM"=>"08021281924033" , "Angkatan"=>"Fisika 2019"),
+               array("No"=>5  ,"Nama"=>"Putri Anisah", "NIM"=>"08021181924010", "Angkatan"=>"Fisika 2019"),
+               array("No"=>6,"Nama"=>"M. Ferdinan Yuda", "NIM"=>"08021181924006", "Angkatan"=>"Fisika 2019"),
+               array("No"=>7  ,"Nama"=>"M. Aldi Kurniawan", "NIM"=>"08021281823087", "Angkatan"=>"Fisika 2018"),
+               array("No"=>8,"Nama"=>"Daula Fadlun", "NIM"=>"08021281924032", "Angkatan"=>"Fisika 2019"),
+               array("No"=>9  ,"Nama"=>"Ayu Kirani Azzahra", "NIM"=>"08021381924059	", "Angkatan"=>"Fisika 2019"), 
              ); 
 $jumlah = 1
 ?>
@@ -40,7 +46,7 @@ $jumlah = 1
               <a class="nav-link slide-scroll" href="index.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link slide-scroll" href="index.php #about">About Us</a>
+              <a class="nav-link slide-scroll" href="index.php">About Us</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -72,26 +78,26 @@ $jumlah = 1
               <!-- TABLE OPREC 2021 -->
 
               <div class="container">
-                <p style="margin : 35px 0">Berikut adalah nama peserta open recruitment assistan komputasi 2021:</p>
+                <p class="text" style="margin : 35px 0">Berikut adalah nama peserta open recruitment assistan komputasi 2021:</p>
                 <?php if (count($asisten) > 0): ?>
-                  <table class="table table-striped">
-                  <thead>
-                    <tr>
-                      <!-- <th>No</th> -->
-                      <th scope="col"><?php echo implode('</th><th>', array_keys(current($asisten))); ?></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                  <?php foreach ($asisten as $row): array_map('htmlentities', $row); ?>
-                    <tr>
-                      <!-- <th scope="row"><?php if($jumlah=1){$jumlah++;echo $jumlah;}?></th> -->
-                      <td><?php echo implode('</td><td>', $row); ?></td>
-                    </tr>
-                    <?php endforeach; ?>
-                  </tbody>
+                  <table class="table table-striped table-responsive-sm">
+                    <thead>
+                      <tr>
+                        <!-- <th>No</th> -->
+                        <th scope="col"><?php echo implode('</th><th>', array_keys(current($asisten))); ?></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <?php foreach ($asisten as $row): array_map('htmlentities', $row); ?>
+                      <tr>
+                        <!-- <th scope="row"><?php if($jumlah=1){$jumlah++;echo $jumlah;}?></th> -->
+                        <td><?php echo implode('</td><td>', $row); ?></td>
+                      </tr>
+                      <?php endforeach; ?>
+                    </tbody>
                   </table>
                   <?php endif; ?>
-               <p style="margin : 35px 0">Selamat bergabung bagi peserta yang dinyatakan lolos. Bagi yang tidak dinyatakan lolos jangan berkecil hati dan tetap semangat</p>
+               <p class="text" style="margin : 35px 0"><Span>Selamat bergabung! </Span> bagi peserta yang dinyatakan lolos. Bagi yang tidak dinyatakan lolos jangan berkecil hati dan tetap semangat</p>
               </div>
             </div>
             
@@ -133,4 +139,3 @@ $jumlah = 1
     -->
   </body>
 </html>
-?>

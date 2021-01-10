@@ -58,7 +58,7 @@
           <h2>Hello World!</h2>
           <h3>Selamat datang..</h3>
           <h3>Di Lab Komputasi MIPA</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ipsum facilis cupiditate? Porro, aut. Quis facere doloremque voluptatem excepturi dignissimos nesciunt illum reiciendis incidunt veritatis.</p>
+          <p>Mulai perjalanan ke dunia pemrograman bersama Lab Komputasi. Dengan inovasi dan bimbingan dari asisten Lab Komputasi, Kalian akan diajak menjelajahi bagaimana asik dan serunya dunia pemrograman.<br><br> Let's get start it..</p>
           <a class="slide-scroll" href="#explore">Explore More</a>
         </div>
       </div>
@@ -105,7 +105,7 @@
         </div>
         <div class="col-lg-5">
           <h3>Work as a <span>team</span>, study as a <span> friend</span></h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore repellendus ipsa soluta recusandae dolorum eum mollitia explicabo sunt porro atque.</p>
+          <p>Belajar mengenal program bersama asisten yang friendly dan berkompeten. Sebelum itu mari berkenalan dengan asisten Lab Komputasi tahun 2021 yuk..</p>
           <div class="tombol-asisten dropdown">
             <button class="button-asisten btn btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Berkenalan dengan asisten

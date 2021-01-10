@@ -32,7 +32,7 @@
               <a class="nav-link slide-scroll" href="index.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link slide-scroll" href="index.php #about">About Us</a>
+              <a class="nav-link slide-scroll" href="index.php">About Us</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -92,9 +92,19 @@
           <img src="img/ass17/rendy.jpeg" alt="ruang lab" class="img-fluid">
         </div>
         <div class="col-lg-5 biodata">
-        <h3 style="font-size:1.8em;">"Mengerti <span>wanita   </span>akan jauh terasa lebih <span>sulit </span> dari pada barisan code program"</h3>
-          <p>Nama : Rendy Malikul Mulki</p>
-          <p>NIM  : 08021281823039</p>
+        <h3 style="font-size:1.8em;">"Mengerti akan <span>wanita </span>jauh terasa lebih <span>sulit </span> dari pada barisan code program"</h3>
+          <p>Nama : Rendy MalikulMulki Wahid</p>
+          <p>NIM  : 08021181722003</p>
+          <p>KBI  : Elinkomnuk</p>
+        </div>
+
+        <div class="col-lg-5 offset-1" id="about">
+          <img src="img/ass17/indah.jpeg" alt="ruang lab" class="img-fluid">
+        </div>
+        <div class="col-lg-5 biodata">
+        <h3 style="font-size:1.8em;">"Hidup itu <span>seni, </span>jadi jangan ragu untuk <span>mengekspresikan </span> dirimu 💕"</h3>
+          <p>Nama : Indah Sari</p>
+          <p>NIM  : 08021181722058</p>
           <p>KBI  : Elinkomnuk</p>
         </div>
       </div>
