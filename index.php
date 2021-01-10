@@ -18,36 +18,36 @@
   <body>
     <!-- NAVBAR -->
     <div class="container my-5">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light custom-nav bg-transparent">
-        <a class="navbar-brand" href="#home">
-          <img src="img/lab.png" alt="logo lab">
-          <span>Lab Komputasi</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link slide-scroll" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link slide-scroll" href="#about">About Us</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                News
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="oprec.php">Open Recruitment</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn-primary contact-button" href="#">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light custom-nav bg-transparent">
+          <a class="navbar-brand" href="#home">
+            <img src="img/lab.png" alt="logo lab">
+            <span>Lab Komputasi</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link slide-scroll" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link slide-scroll" href="#about">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  News
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="oprec.php">Open Recruitment</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-primary contact-button" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
     </div>
     <!-- End NAVBAR -->
 

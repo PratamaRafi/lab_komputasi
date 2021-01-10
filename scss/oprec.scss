@@ -1,0 +1,173 @@
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+// Variables
+$primaryColor: #EE8926;
+$secColor: #2C2A55;
+$thrdColor: #9296D3;
+$textColor: #6578C4;
+
+//Mixin
+@mixin button {
+    display: inline-block;
+    color: white;
+    background-color: $primaryColor;
+    border-radius: 2em;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+//style
+body {
+    font-family: 'Ubuntu', sans-serif;
+    &::before {
+        content: '';
+        opacity: .6;
+        margin-bottom: -500px;
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+        background-image: url(../img/background.png);
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: 60vmax;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+//NAVBAR
+.custom-nav {
+    .navbar-brand {
+        img {
+            width: 45px;
+            height: 45px;
+            margin-top: -7px;
+        }
+        span {
+            color: $secColor;
+            font-weight: 700;
+            font-size: 1.4rem;
+            margin-left: 0.4em;
+        }
+    }
+
+    #navbarNav {
+        .navbar-nav {
+            .nav-item {
+                .dropdown-menu {
+                    display: block;
+                    visibility: hidden;
+                    opacity:0;
+                    transform: translateY(50px);
+                    transition:.5s ease all;
+                    background-color: white;
+                    border-radius: 1em;
+                    padding-right: -30px;
+                    padding-left: -30px;
+                    &:hover {
+                        color: lighten(white, 50%);
+                    }
+
+                    @media screen and (max-width: 992px) {
+                        &:hover {
+                            color: darken($textColor, 10%);
+                    }
+                        
+                    } 
+                    .dropdown-item{
+                    color: $secColor;    
+                    font-weight: 500;
+                    padding-right: -30px;
+                    padding-left: -30px;
+                    @media screen and (max-width: 992px) {
+                        text-align: center;
+                    }
+                    }
+                }
+                .dropdown-menu.show {
+                    display: block;
+                    visibility: visible;
+                    opacity:1;
+                    transform: translateY(0px);
+                    transition:.5s ease all;
+                }
+                .nav-link{
+                    text-align: center;
+                    color: $secColor;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    margin-left: 2.4em;
+                    transition: .3s color ease;
+
+                    &:hover {
+                        color: lighten(white, 50%);
+                    }
+
+                    @media screen and (max-width: 992px) {
+                        &:hover {
+                            color: darken($textColor, 10%);
+                    }
+                        
+                    }
+                    
+                }
+                .contact-button {
+                    background-color: white;
+                    color: $secColor;
+                    text-align: center;
+                    border-radius: 2em;
+                    border: 0;
+                    padding-left: 1.5em;
+                    padding-right: 1.5em;
+
+                    &:hover {
+                        color: darken(white, 10%);
+                        background-color: darken($secColor, .1%);
+                    }
+
+                    @media screen and (max-width: 992px){
+                        background-color: $secColor;
+                        color: white;
+
+                        &:hover {
+                            color: darken($textColor, 10%);
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 992px) {
+        margin-top: -1em;
+    }
+}
+
+// TABLE OPREC
+.table {
+    background-color: whitesmoke;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 1.2em;
+    margin-top: 25px;
+    .col{
+        border-radius: 1.7em;
+    }
+}
+
+
+
+
+
+
+
+
+// footer
+.footer {
+    margin-top: 100px;
+    p {
+        color: $secColor;
+        font-size: 1.1em;
+    }
+}

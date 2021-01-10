@@ -1,3 +1,11 @@
+<?php
+$asisten = array( array("No"=>1,"Nama"=>"Muhammad Rafi Pratama", "NIM"=>"08021281823027" , "Angkatan"=>"Fisika 2018"),
+               array("No"=>2,"Nama"=>"daisy", "NIM"=>0.75 , "Angkatan"=>"08021281823027"),
+               array("No"=>3  ,"Nama"=>"orchid", "NIM"=>1.15 , "Angkatan"=>7) 
+             ); 
+$jumlah = 1
+?>
+
 <!doctype html>
 <html lang="en" id="home">
   <head>
@@ -8,7 +16,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <!-- My CSS -->
-    <link rel="stylesheet" href="scss/asisten.css">
+    <link rel="stylesheet" href="scss/oprec.css">
     <title>Lab Komputasi MIPA</title>
 
     <!--web icon-->
@@ -57,8 +65,34 @@
 
       <!-- Lab info -->
         <div class="row text">
-            <div class="col text-center">
-                <h3>Oops..This Page Under Construction</h3>
+            <div class="col">
+                <div class="container text-center">
+                  <h3>Pengumuman Open Recruitment Assitant kompuasi 2021</h3>
+                </div>
+              <!-- TABLE OPREC 2021 -->
+
+              <div class="container">
+                <p style="margin : 35px 0">Berikut adalah nama peserta open recruitment assistan komputasi 2021:</p>
+                <?php if (count($asisten) > 0): ?>
+                  <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <!-- <th>No</th> -->
+                      <th scope="col"><?php echo implode('</th><th>', array_keys(current($asisten))); ?></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <?php foreach ($asisten as $row): array_map('htmlentities', $row); ?>
+                    <tr>
+                      <!-- <th scope="row"><?php if($jumlah=1){$jumlah++;echo $jumlah;}?></th> -->
+                      <td><?php echo implode('</td><td>', $row); ?></td>
+                    </tr>
+                    <?php endforeach; ?>
+                  </tbody>
+                  </table>
+                  <?php endif; ?>
+               <p style="margin : 35px 0">Selamat bergabung bagi peserta yang dinyatakan lolos. Bagi yang tidak dinyatakan lolos jangan berkecil hati dan tetap semangat</p>
+              </div>
             </div>
             
         </div>
@@ -99,3 +133,4 @@
     -->
   </body>
 </html>
+?>

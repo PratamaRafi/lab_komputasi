@@ -73,21 +73,36 @@
       <!-- Lab info -->
         <div class="row text">
             <div class="col text-center">
-                <h3>Oops..This Page Under Construction</h3>
+                <h3>Salam Hangat dari Asisten Lab Komputasi</h3>
             </div>
             
         </div>
-      <!-- <div class="row lab-info">
+      <div class="row lab-info">
         <div class="col-lg-5 offset-1" id="about">
-          <img src="img/rizka.jpeg" alt="ruang lab" class="img-fluid">
+          <img style="box-shadow: 0 3px 20px rgba(0, 0, 0, 0.7);" src="img/ass17/tiva.JPG" alt="ruang lab" class="img-fluid">
         </div>
         <div class="col-lg-5 biodata">
-          <h3><span>Semangat</span> Srikandi, untuk <span> berdedikasi</span></h3>
-          <p>Nama : Rizka Andri Yani</p>
+          <h3 style="font-size:1.8em;">"Whenever we look back, we can't help but those times <span>smile </span>we will never to <span>forget </span>those times."</h3>
+          <p>Nama : Tiva Primaisella</p>
+          <p>NIM  : 08021281722062</p>
+          <p>KBI  : Elinkomnuk</p>
+        </div>
+
+        <div class="col-lg-5 offset-1" id="about">
+          <img src="img/ass17/rendy.jpeg" alt="ruang lab" class="img-fluid">
+        </div>
+        <div class="col-lg-5 biodata">
+        <h3 style="font-size:1.8em;">"Mengerti <span>wanita   </span>akan jauh terasa lebih <span>sulit </span> dari pada barisan code program"</h3>
+          <p>Nama : Rendy Malikul Mulki</p>
           <p>NIM  : 08021281823039</p>
           <p>KBI  : Elinkomnuk</p>
         </div>
-      </div> -->
+      </div>
+
+
+      </div>
+
+      
       <!-- End lab info -->
 
       <!-- Footer -->

@@ -1,3 +1,10 @@
+<?php
+  $ass18 = array( array("img"=>"rose", "quotes"=>"Anjai mabar", "nama"=>1.25 , "NIM"=>15, "KBI"=>"Elin"),
+  array("img"=>"daisy", "quotes"=>"Anjai mabar", "nama"=>0.75 , "NIM"=>25, "KBI"=>"Elin"),
+  array("img"=>"orchid", "quotes"=>"Anjai mabar", "nama"=>1.15 , "NIM"=>7, "KBI"=>"Elin") 
+  ); 
+?>
+
 <!doctype html>
 <html lang="en" id="home">
   <head>
@@ -79,7 +86,7 @@
         </div>
       <div class="row lab-info">
         <div class="col-lg-5 offset-1" id="about">
-          <img src="img/rizka.jpeg" alt="ruang lab" class="img-fluid">
+          <img src="img/ass18/rizka.jpeg" alt="ruang lab" class="img-fluid">
         </div>
         <div class="col-lg-5 biodata">
           <h3>"<span>Semangat</span> Srikandi, untuk <span> berdedikasi</span>"</h3>
@@ -88,7 +95,7 @@
           <p>KBI  : Elinkomnuk</p>
         </div>
         <div class="col-lg-5 offset-1" id="about">
-          <img src="img/rafi.jpeg" alt="ruang lab" class="img-fluid">
+          <img src="img/ass18/rafi.jpeg" alt="ruang lab" class="img-fluid">
         </div>
         <div class="col-lg-5 biodata">
           <h3>"<span>Error</span> merupakan sahabat <span> terbaik</span>"</h3>
