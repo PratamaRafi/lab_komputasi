@@ -78,7 +78,7 @@ $jumlah = 1
               <!-- TABLE OPREC 2021 -->
 
               <div class="container">
-                <p class="text" style="margin : 35px 0">Berikut adalah nama peserta open recruitment assistan komputasi 2021:</p>
+                <p class="text" style="margin : 35px 0">Berikut adalah nama peserta yang dinyatakan lolos open recruitment assistant komputasi 2021:</p>
                 <?php if (count($asisten) > 0): ?>
                   <table class="table table-striped table-responsive-sm">
                     <thead>
